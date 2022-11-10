@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.h-main {
+	width: 50%;
+	margin: 12vmin auto 0 auto;
+}
+
+
+.h-parqut > p:nth-child(1) {
+	color:rgba(255, 255, 255, 0.4);
+	font-size: clamp(1rem, 2.5vw, 2rem);  
+	margin-bottom: 3.7vh;
+}
+
+.h-quote {
+	color: rgb(255, 255, 255);
+	font-weight: 600;
+	font-size: clamp(1.5rem, 2.5vw, 4rem);
+	letter-spacing: 1px;
+	font-family: "Poppins", sans-serif;
+}
+
+.h-main button {
+	margin-top: 5vmin;
+	background-color: #000;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	padding: 2vmax;
+	text-align: center;
+	font-size: 20px;
+}
+
+.h-main button:hover {
+	border-left: none;
+	border-right: none;
+	transition: all 0.3s ease;
+	background-color: #fff;
+	color: #000;
+}
+
+@media (max-width: 800px) {
+    .h-main {
+		width: 60%;
+	}
+
+	.h-quote {
+		font-size: clamp(2rem, 3vw, 4rem);;
+	}
+}

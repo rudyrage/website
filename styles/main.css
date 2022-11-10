@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: #000;
+}
+
+
+nav {
+	margin: 0vmin 40px;
+	min-height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* font-family: sans-serif; */
+}
+
+nav .logo {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 33px;
+	font-weight: 800;
+}
+
+#click {
+	display: none;
+}
+
+nav .menu-btn {
+	color: #fff;
+	font-size: 25px;
+	display: none;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	margin: 0vmax 1vmax;
+}
+
+nav ul li a {
+	color: #fff;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	padding: 1vmax 0.6vmax;
+	border-radius: 0.6vmax;
+	transition: all 0.3s ease;
+}
+
+
+nav ul li a.active,nav ul li a:active,nav ul li a:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+
+
+@media (max-width: 800px) {
+	#click:checked ~ ul {
+		left: 0%;
+	}
+
+	#click:checked ~ .menu-btn i::before {
+		content: '\f00d';
+	}
+
+	.menu-btn:hover {
+		color: #00ffff;
+	}
+
+	nav .menu-btn {
+		display: block;
+		cursor: pointer;
+	}
+
+	nav ul {
+		position: fixed;
+		top: 80px;
+		left: 15px;
+		background-color: #111;
+		height: 100vh;
+		width: 100%;
+		display: block;
+		text-align: center;
+		left: -100%;
+		transition: all 0.3s ease;
+	}
+
+	nav ul li {
+		margin-top: 10vh;
+	}
+
+	nav ul li::before {
+		content: ">";
+		color: #fff;
+		margin: 0 1vmax;
+	}
+
+	nav ul li a {
+		font-size: 1.1em;
+	}
+
+	nav ul li a.active,nav ul li a:hover {
+		background-color: #111;
+		color: #00ffff;
+	}
+	
+}

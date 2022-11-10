@@ -1,0 +1,23 @@
+
+.container {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.py, .js {
+    background-color: #2f334b;
+    width: 48vw;
+    height: 70vh;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+
+.container i {
+   display: block;
+   text-align: center;
+   font-size: 10em;
+   color: yellow;
+   border: 1px solid transparent;
+}
