@@ -23,7 +23,7 @@ class Nav {
 		this.navElems.forEach(elem => {
 			elem.addEventListener('click', () => {
 				if (location.href.includes("#")) {
-					console.log("yes")
+					console.log("yes");
 				}
 			})
 		})
