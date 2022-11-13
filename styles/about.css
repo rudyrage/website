@@ -1,0 +1,30 @@
+main {
+    margin-top: 15vh;
+    color: #fff;
+}
+
+h1, h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5vh;
+    letter-spacing: 2vw;
+    color: #be3144;
+}
+
+.intro {
+    width: 50%;
+    margin: 10vh auto;
+    font-size: clamp(1rem, 2.5vw, 2rem);;
+}
+
+.min-info {
+    margin-top: 5vh;
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(-45deg, #4413eb 0% 10%,  #be3144, #7FFFD4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}

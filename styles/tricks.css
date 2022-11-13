@@ -1,23 +1,46 @@
+body {
+    height: 86.8vh;
+    background-color: #000;
+}
 
-.container {
-    margin-top: 8%;
+.lang-trick-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
 }
 
-.py, .js {
-    background-color: #2f334b;
-    width: 48vw;
-    height: 70vh;
+h2, a {
+    font-size: clamp(1.2rem, 5.5vw, 2rem);  
+}
+
+a {
+    color: #fddd;
+}
+
+ul {
+    margin-left: -50px;
+    margin-top: 5vh;
+}
+
+ul li {
+    margin-bottom: 5vh;
+}
+
+.language {
+    font-size: 3vh;
     border: 1px solid transparent;
-    border-radius: 25px;
 }
 
-.container i {
-   display: block;
-   text-align: center;
-   font-size: 10em;
-   color: yellow;
-   border: 1px solid transparent;
+.language:hover {
+    font-size: 2em;
+}
+
+.language::before {
+    content: ">";
+    margin-right: 10px;
+    transition: all 0.3s ease;
 }
