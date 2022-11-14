@@ -63,7 +63,6 @@ nav ul li a.active,nav ul li a:active,nav ul li a:hover {
 }
 
 
-
 @media (max-width: 800px) {
 	#click:checked ~ ul {
 		left: 0%;

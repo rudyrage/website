@@ -2,17 +2,19 @@ class Nav {
 	constructor(navElems) {
 		this.navElems = document.querySelectorAll(navElems);
 		this.displayAcvtiveLink()
-		this.updateUrl()
 	}
 
 	displayAcvtiveLink() {
 		this.navElems.forEach(elem => {
 			if (elem.href === location.href) {
 				elem.className = "active";
-				elem.href = "#";
+				console.log(elem.style.pointerEvent)
+				elem.style.pointerEvents = "none";
 			}
 		})
 	}
+<<<<<<< HEAD
+=======
 
 	removeUrlHash() {
 		let customUrl = location.href.slice(0, -1);
@@ -23,12 +25,13 @@ class Nav {
 		this.navElems.forEach(elem => {
 			elem.addEventListener('click', () => {
 				if (location.href.includes("#")) {
-					console.log("yes");
+					console.log("yes")
 				}
 			})
 		})
 	}
+>>>>>>> parent of 76e0073 (updated hash removing mechanism from url)
 }
 
 
-let nav = new Nav(".nav-links a")
+new Nav(".nav-links a")
