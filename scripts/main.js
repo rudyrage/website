@@ -14,6 +14,7 @@ class Nav {
 		})
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 	removeUrlHash() {
@@ -31,6 +32,8 @@ class Nav {
 		})
 	}
 >>>>>>> parent of 76e0073 (updated hash removing mechanism from url)
+=======
+>>>>>>> b63344f (main page)
 }
 
 
