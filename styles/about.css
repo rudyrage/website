@@ -12,9 +12,10 @@ h1, h3 {
 }
 
 .intro {
-    width: 50%;
+    text-align: justify;
+    width: 70%;
     margin: 10vh auto;
-    font-size: clamp(1rem, 2.5vw, 2rem);;
+    font-size: clamp(1.3rem, 2.8vw, 2rem);;
 }
 
 .min-info {
@@ -27,4 +28,10 @@ h1, h3 {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+}
+
+@media (max-width: 800px) {
+    .intro {
+        width: 80%;
+    }
 }
