@@ -13,27 +13,6 @@ class Nav {
 			}
 		})
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-	removeUrlHash() {
-		let customUrl = location.href.slice(0, -1);
-		window.history.pushState(location.href, document.title, customUrl);
-	}
-
-	updateUrl() {
-		this.navElems.forEach(elem => {
-			elem.addEventListener('click', () => {
-				if (location.href.includes("#")) {
-					console.log("yes")
-				}
-			})
-		})
-	}
->>>>>>> parent of 76e0073 (updated hash removing mechanism from url)
-=======
->>>>>>> b63344f (main page)
 }
 
 
