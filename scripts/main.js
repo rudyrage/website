@@ -8,6 +8,7 @@ class Nav {
 		this.navElems.forEach(elem => {
 			if (elem.href === location.href) {
 				elem.className = "active";
+				console.log(elem.className + "1234");
 				console.log(elem.style.pointerEvent)
 				elem.style.pointerEvents = "none";
 			}
